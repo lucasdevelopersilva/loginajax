@@ -13,7 +13,7 @@ if(!empty($POST['action'])){
 	$action = $POST['action'];
 	unset($POST['action']);
 }
-
+sleep(1);
 switch($action):
 	case "create_user":
 

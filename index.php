@@ -41,7 +41,7 @@
 <script>
 	$(function(){
 		$.ajaxSetup({type:"POST","dataType":"jSon","beforeSend":function(){
-			$('.message').html(alertBoostrap('realizando login...',"info"));
+			$('.message').html(alertBoostrap('Processando...',"info"));
 		},error:function(response){
 			$('.message').html(alertBoostrap('Houve um erro interno no processamento das informações. Tente mais tarde.',"danger"));
 		}});
