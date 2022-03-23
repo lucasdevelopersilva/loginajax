@@ -65,7 +65,7 @@
 			var success = function(response){
 				$('.message').html(alertBoostrap(response.message[0],response.message[1]));
 
-				if(response.success){
+				if(response.success && response.redirect){
 					window.location.href = response.redirect;
 				} 
 			}
